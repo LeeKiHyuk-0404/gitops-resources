@@ -2,7 +2,7 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: gitops-cron
-  namespace: gitops
+  #namespace: gitops
 spec:
   schedule: "*/5 * * * *"                            #A
   concurrencyPolicy: Forbid                          #B
